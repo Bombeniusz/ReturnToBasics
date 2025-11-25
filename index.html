@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="1">Red Header</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <button onclick="myFunction()">Click me</button>
+    <button id = "button2" onmouseenter="myFunction2()" onmouseout="myFunction3()">Hover me</button>
+</body>
+<style>
+    h1{
+        background-color: red;
+    }
+    h2 {
+        background-color: blue;
+    }
+    h3 {
+        background-color: cyan;
+    }
+    h4 {
+        background-color: magenta;
+    }
+    h5 {
+        background-color: green;
+    }
+    h6 {
+        background-color: yellow;
+    }
+    #button2{
+        background-color: red;
+    }
+</style>
+<script>
+    console.log("Hello, index!")
+    let x = 10;
+    console.log(x);
+    let header = document.getElementById("1");
+    let button2 = document.getElementById("button2");
+    function myFunction(){
+        if(header.textContent == "Red Header"){
+            header.textContent = "Blue Header";
+            header.style.backgroundColor = "blue";
+        }
+        else{
+            header.textContent = "Red Header";
+            header.style.backgroundColor = "red";
+        }
+    }
+    function myFunction2()
+    {
+        button2.textContent = "You just hovered me";
+        button2.style.backgroundColor = "blue";
+    }
+
+    function myFunction3()
+    {
+        button2.textContent = "Hover me";
+        button2.style.backgroundColor = "red";
+    }
+
+    // Mouse Events
+    // Event	Occurs When
+    // onclick	The user clicks on an element
+    // oncontextmenu	The user right-clicks on an element
+    // ondblclick	The user double-clicks on an element
+    // onmousedown	A mouse button is pressed over an element
+    // onmouseenter	The pointer is moved onto an element
+    // onmouseleave	The pointer is moved out of an element
+    // onmousemove	The pointer is moving over an element
+    // onmouseout	The mouse pointer moves out of an element
+    // onmouseover	The mouse pointer is moved over an element
+    // onmouseup	The mouse button is released over an element
+</script>
+</html>
